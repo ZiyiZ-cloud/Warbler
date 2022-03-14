@@ -5,6 +5,7 @@
 #    FLASK_ENV=production python -m unittest test_message_views.py
 
 
+
 import os
 from unittest import TestCase
 
@@ -15,7 +16,7 @@ from models import db, connect_db, Message, User
 # before we import our app, since that will have already
 # connected to the database
 
-os.environ['DATABASE_URL'] = "postgresql:///warbler-test"
+os.environ['DATABASE_URL'] = "postgresql:///warbler_test"
 
 
 # Now we can import app
